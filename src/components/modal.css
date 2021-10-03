@@ -1,0 +1,107 @@
+.modal-order{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.472);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    align-items: center;
+}
+
+.modal-order >div{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 60%;
+    height: 85vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.logo{
+    color: blue;
+    font-size: 22px;
+}
+
+.index{
+ display: flex;
+ flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.address{
+    width: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-order button{
+    padding: 0.25rem 1.5rem;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.modal-order button:nth-child(2){
+    background-color: red;
+}
+
+.modal-order>.text-text{
+    height: 100px;
+    padding: 20px;
+  }
+
+  
+  .text-text button{
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .m2{
+      z-index: 200;
+      /* height: 143px; */
+  }
+
+  .m2 button{
+      background-color: red;
+      width: 200px;
+      margin: 0;
+
+  }
+
+  .m2 .m3{
+      height: 200px;
+  }
+
+  .m3 button:nth-child(2){
+      background-color: green;
+      margin-top: 10px;
+      margin-bottom: 15px;
+  }
+
+  .m3 button:nth-child(3){
+    background-color: blue;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+  .m2 h3{
+      margin: 0;
+  }
+
+  .m4{
+      margin-top: 12px;
+      color: #000;
+  }

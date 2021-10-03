@@ -1,0 +1,115 @@
+.map-container {
+  width: 60vw;
+  height: 100vh;
+  }
+   
+  .sidebar {
+    background-color: rgba(35, 55, 75, 0.9);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    border-radius: 4px;
+    }
+    
+    .main{
+      display: flex;
+      flex-direction: row;
+
+    }
+
+    .main-2{
+      width: 40%;
+      /* background-color: #404040; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      /* color: #fff; */
+    }
+
+
+    
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.25rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  color: #777;
+  position: relative;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+
+.btn:disabled,
+.btn:disabled:hover,
+.btn:disabled:active{
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  text-transform: uppercase;
+  cursor: not-allowed;
+  transform: translateY(0);
+}
+
+
+.btn--green {
+  background-color: #55c57a;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #55c57a; }
+
+
+  a:visited{
+      color: white;
+  }
+
+
+  .main-2 h2{
+    margin-bottom: -2px;
+  }
+
+  .main-2 input{
+    padding: 0.25rem;
+   border-radius: 15px;
+    margin-top: 5px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+  }
+
+  .main-2 input:focus{
+   outline: none;
+    padding: 0.25rem;
+    border-color: #777;
+    border-radius: 15px;
+    margin-top: 5px;
+  }
+
+  .error-txt{
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: red;
+  }
+
+  

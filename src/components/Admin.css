@@ -1,0 +1,28 @@
+.admin-con{
+    width: 90%;
+    margin: 50px auto;
+    background-color: white;
+    /* background-color: rgb(43, 100, 165); */
+    height: 100vh;
+    overflow-y: scroll;
+
+}
+
+.admin-div{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: black;
+    /* background-color: rgb(43, 100, 165); */
+    /* background-color: #fff; */
+    color: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.admin-div p:hover{
+    color: blue;
+}

@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useEffect,useState} from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+  Link
+} from "react-router-dom";
+import Loginindex from './components/login';
+import Home from './components/Home'
+import Admin from './components/Admin';
+import { parseCookies, destroyCookie } from "nookies";
+import Cookies from 'js-cookie';
 
-function App() {
+export default function App() {
+
+      let isLogedin = Cookies.get('token');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Router>
+       <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/login" exact>
+            <Loginindex />
+          </Route>
 
-export default App;
+          <Route exact path="/admin">
+          {isLogedin ? <Admin/>:<Redirect to="/login" /> }
+         </Route>
+
+
+{/* 
+          <Route path="/admin">
+            <Admin/>
+          </Route> */}
+      </Switch>
+    </Router>
+  )
+}
